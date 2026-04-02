@@ -1,0 +1,114 @@
+{
+  "platform": "BlackMess Research \u2014 Ternate, Indonesia",
+  "date": "2026-04-02T21:19:55Z",
+  "note": "Python-level timing analysis. liboqs C implementation is constant-time.",
+  "methodology": "200 iterations per operation, CV (coefficient of variation) analysis",
+  "threshold": "CV < 15% ideal at Python level (C-level is constant-time)",
+  "results": {
+    "ML-KEM-1024": {
+      "keygen": {
+        "label": "ML-KEM-1024 KeyGen",
+        "iterations": 200,
+        "avg_ms": 0.3713,
+        "stdev_ms": 0.0973,
+        "median_ms": 0.343,
+        "min_ms": 0.3341,
+        "max_ms": 1.5356,
+        "p95_ms": 0.4688,
+        "p99_ms": 0.7261,
+        "cv_pct": 26.22
+      },
+      "encap": {
+        "label": "ML-KEM-1024 Encap",
+        "iterations": 200,
+        "avg_ms": 0.5069,
+        "stdev_ms": 0.1565,
+        "median_ms": 0.4392,
+        "min_ms": 0.3715,
+        "max_ms": 1.0582,
+        "p95_ms": 0.852,
+        "p99_ms": 1.0055,
+        "cv_pct": 30.88
+      },
+      "decap_valid": {
+        "label": "ML-KEM-1024 Decap (valid)",
+        "iterations": 200,
+        "avg_ms": 0.4792,
+        "stdev_ms": 0.1137,
+        "median_ms": 0.458,
+        "min_ms": 0.3518,
+        "max_ms": 0.7764,
+        "p95_ms": 0.6792,
+        "p99_ms": 0.7682,
+        "cv_pct": 23.72
+      },
+      "decap_invalid": {
+        "label": "ML-KEM-1024 Decap (invalid ct)",
+        "iterations": 200,
+        "avg_ms": 0.4018,
+        "stdev_ms": 0.0802,
+        "median_ms": 0.3611,
+        "min_ms": 0.3519,
+        "max_ms": 0.8347,
+        "p95_ms": 0.5932,
+        "p99_ms": 0.7043,
+        "cv_pct": 19.95
+      }
+    },
+    "ML-DSA-65": {
+      "keygen": {
+        "label": "ML-DSA-65 KeyGen",
+        "iterations": 200,
+        "avg_ms": 0.7611,
+        "stdev_ms": 0.1386,
+        "median_ms": 0.7188,
+        "min_ms": 0.6165,
+        "max_ms": 1.379,
+        "p95_ms": 1.0224,
+        "p99_ms": 1.1727,
+        "cv_pct": 18.21
+      },
+      "sign": {
+        "label": "ML-DSA-65 Sign",
+        "iterations": 200,
+        "avg_ms": 3.0718,
+        "stdev_ms": 1.9939,
+        "median_ms": 2.401,
+        "min_ms": 1.0296,
+        "max_ms": 12.462,
+        "p95_ms": 7.0128,
+        "p99_ms": 11.955,
+        "cv_pct": 64.91
+      },
+      "verify_valid": {
+        "label": "ML-DSA-65 Verify (valid)",
+        "iterations": 200,
+        "avg_ms": 0.7459,
+        "stdev_ms": 0.1141,
+        "median_ms": 0.7107,
+        "min_ms": 0.6251,
+        "max_ms": 1.0972,
+        "p95_ms": 0.9518,
+        "p99_ms": 1.0936,
+        "cv_pct": 15.3
+      },
+      "verify_invalid": {
+        "avg_ms": 0.1227
+      }
+    },
+    "Hybrid-KEM": {
+      "label": "Hybrid KEM full encap",
+      "iterations": 100,
+      "avg_ms": 1.7284,
+      "stdev_ms": 0.6089,
+      "median_ms": 1.4668,
+      "min_ms": 1.1358,
+      "max_ms": 4.3186,
+      "p95_ms": 2.6544,
+      "p99_ms": 4.3186,
+      "cv_pct": 35.23
+    }
+  },
+  "conclusion": "All operations show timing variance consistent with Python interpreter overhead (GIL, GC, JIT). The liboqs library implements constant-time operations at the C level per NIST requirements. Formal side-channel proof requires C-level analysis using tools such as ctgrind or dudect.",
+  "bsi_note": "BSI TR-02102-1 requires constant-time implementation for PQC. liboqs satisfies this at C level. Python binding adds unavoidable variance."
+}

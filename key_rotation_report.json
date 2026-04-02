@@ -1,0 +1,93 @@
+{
+  "summary": {
+    "total": 5,
+    "active": 1,
+    "revoked": 4
+  },
+  "audit_log": [
+    {
+      "ts": "2026-04-02T21:19:52.197494+00:00",
+      "event": "KEY_GENERATED",
+      "user": "anomali@blackmess.id",
+      "details": "key_id=071f203d87428add algo=ML-DSA-65 (4.61ms)"
+    },
+    {
+      "ts": "2026-04-02T21:19:52.199319+00:00",
+      "event": "KEY_GENERATED",
+      "user": "anomali@blackmess.id",
+      "details": "key_id=8e61c3c8cdca5050 algo=ML-KEM-1024 (1.36ms)"
+    },
+    {
+      "ts": "2026-04-02T21:19:52.201147+00:00",
+      "event": "KEY_GENERATED",
+      "user": "anomali@blackmess.id",
+      "details": "key_id=0e195869ee244af7 algo=ML-DSA-65 (1.01ms)"
+    },
+    {
+      "ts": "2026-04-02T21:19:52.201406+00:00",
+      "event": "KEY_ROTATED",
+      "user": "anomali@blackmess.id",
+      "details": "old=071f203d87428add new=0e195869ee244af7"
+    },
+    {
+      "ts": "2026-04-02T21:19:52.209285+00:00",
+      "event": "KEY_GENERATED",
+      "user": "anomali@blackmess.id",
+      "details": "key_id=7c283f29685e7d83 algo=ML-KEM-1024 (0.71ms)"
+    },
+    {
+      "ts": "2026-04-02T21:19:52.209503+00:00",
+      "event": "KEY_ROTATED",
+      "user": "anomali@blackmess.id",
+      "details": "old=8e61c3c8cdca5050 new=7c283f29685e7d83"
+    },
+    {
+      "ts": "2026-04-02T21:19:52.209951+00:00",
+      "event": "COMPROMISE_REPORTED",
+      "user": "anomali@blackmess.id",
+      "details": "User melaporkan private key dicuri"
+    },
+    {
+      "ts": "2026-04-02T21:19:52.210389+00:00",
+      "event": "KEY_REVOKED",
+      "user": "anomali@blackmess.id",
+      "details": "key_id=071f203d87428add reason=REPORTED_COMPROMISE"
+    },
+    {
+      "ts": "2026-04-02T21:19:52.210880+00:00",
+      "event": "KEY_REVOKED",
+      "user": "anomali@blackmess.id",
+      "details": "key_id=8e61c3c8cdca5050 reason=REPORTED_COMPROMISE"
+    },
+    {
+      "ts": "2026-04-02T21:19:52.211296+00:00",
+      "event": "KEY_REVOKED",
+      "user": "anomali@blackmess.id",
+      "details": "key_id=0e195869ee244af7 reason=REPORTED_COMPROMISE"
+    },
+    {
+      "ts": "2026-04-02T21:19:52.211740+00:00",
+      "event": "KEY_REVOKED",
+      "user": "anomali@blackmess.id",
+      "details": "key_id=7c283f29685e7d83 reason=REPORTED_COMPROMISE"
+    },
+    {
+      "ts": "2026-04-02T21:19:52.213955+00:00",
+      "event": "KEY_GENERATED",
+      "user": "anomali@blackmess.id",
+      "details": "key_id=3b69fac2a0a68c9b algo=ML-DSA-65 (1.47ms)"
+    },
+    {
+      "ts": "2026-04-02T21:19:52.214448+00:00",
+      "event": "JWT_INVALIDATED",
+      "user": "anomali@blackmess.id",
+      "details": "All active tokens blacklisted"
+    },
+    {
+      "ts": "2026-04-02T21:19:52.214800+00:00",
+      "event": "PARTNERS_NOTIFIED",
+      "user": "anomali@blackmess.id",
+      "details": "Re-establish E2EE sessions required"
+    }
+  ]
+}

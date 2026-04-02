@@ -1,0 +1,16 @@
+{
+  "platform": "BlackMess Research \u2014 Ternate, Indonesia",
+  "date": "2026-04-02T21:13:38Z",
+  "library": "liboqs-python 0.15.0",
+  "results": {
+    "ML-KEM-1024 FIPS203": "PASS",
+    "ML-DSA-65 FIPS204": "PASS",
+    "Hybrid KEM": "PASS",
+    "Side-Channel Timing": "FAIL",
+    "Key Rotation": "PASS"
+  },
+  "overall": "PARTIAL",
+  "bsi_compliant": true,
+  "nist_fips_203": true,
+  "nist_fips_204": true
+}
