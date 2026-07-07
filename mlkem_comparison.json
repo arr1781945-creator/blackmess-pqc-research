@@ -1,0 +1,32 @@
+[
+  {
+    "variant": "ML-KEM-512",
+    "keygen_avg": 0.4748,
+    "encap_avg": 0.4602,
+    "decap_avg": 0.3814,
+    "pk_size": 800,
+    "sk_size": 1632,
+    "ct_size": 768,
+    "ss_size": 32
+  },
+  {
+    "variant": "ML-KEM-768",
+    "keygen_avg": 0.3737,
+    "encap_avg": 0.3911,
+    "decap_avg": 0.338,
+    "pk_size": 1184,
+    "sk_size": 2400,
+    "ct_size": 1088,
+    "ss_size": 32
+  },
+  {
+    "variant": "ML-KEM-1024",
+    "keygen_avg": 0.4436,
+    "encap_avg": 0.44,
+    "decap_avg": 0.4259,
+    "pk_size": 1568,
+    "sk_size": 3168,
+    "ct_size": 1568,
+    "ss_size": 32
+  }
+]

@@ -1,0 +1,334 @@
+{
+  "FrodoKEM": [
+    {
+      "variant": "FrodoKEM-640-AES",
+      "status": "OK",
+      "keygen_avg": 3.5618,
+      "encap_avg": 4.1584,
+      "decap_avg": 3.9315,
+      "pk_size": 9616,
+      "sk_size": 19888,
+      "ct_size": 9752
+    },
+    {
+      "variant": "FrodoKEM-640-SHAKE",
+      "status": "OK",
+      "keygen_avg": 8.0142,
+      "encap_avg": 9.8491,
+      "decap_avg": 9.743,
+      "pk_size": 9616,
+      "sk_size": 19888,
+      "ct_size": 9752
+    },
+    {
+      "variant": "FrodoKEM-976-AES",
+      "status": "OK",
+      "keygen_avg": 6.466,
+      "encap_avg": 8.1639,
+      "decap_avg": 7.9467,
+      "pk_size": 15632,
+      "sk_size": 31296,
+      "ct_size": 15792
+    },
+    {
+      "variant": "FrodoKEM-976-SHAKE",
+      "status": "OK",
+      "keygen_avg": 16.9406,
+      "encap_avg": 21.2021,
+      "decap_avg": 20.8086,
+      "pk_size": 15632,
+      "sk_size": 31296,
+      "ct_size": 15792
+    },
+    {
+      "variant": "FrodoKEM-1344-AES",
+      "status": "OK",
+      "keygen_avg": 10.9899,
+      "encap_avg": 15.7066,
+      "decap_avg": 14.0777,
+      "pk_size": 21520,
+      "sk_size": 43088,
+      "ct_size": 21696
+    },
+    {
+      "variant": "FrodoKEM-1344-SHAKE",
+      "status": "OK",
+      "keygen_avg": 30.7263,
+      "encap_avg": 38.5577,
+      "decap_avg": 38.3517,
+      "pk_size": 21520,
+      "sk_size": 43088,
+      "ct_size": 21696
+    }
+  ],
+  "eFrodoKEM": [
+    {
+      "variant": "eFrodoKEM-640-AES",
+      "status": "OK",
+      "keygen_avg": 3.1486,
+      "encap_avg": 3.9571,
+      "decap_avg": 3.7264,
+      "pk_size": 9616,
+      "sk_size": 19888,
+      "ct_size": 9720
+    },
+    {
+      "variant": "eFrodoKEM-640-SHAKE",
+      "status": "OK",
+      "keygen_avg": 7.9324,
+      "encap_avg": 9.8487,
+      "decap_avg": 9.6119,
+      "pk_size": 9616,
+      "sk_size": 19888,
+      "ct_size": 9720
+    },
+    {
+      "variant": "eFrodoKEM-976-AES",
+      "status": "OK",
+      "keygen_avg": 6.2985,
+      "encap_avg": 7.9019,
+      "decap_avg": 7.7588,
+      "pk_size": 15632,
+      "sk_size": 31296,
+      "ct_size": 15744
+    },
+    {
+      "variant": "eFrodoKEM-976-SHAKE",
+      "status": "OK",
+      "keygen_avg": 16.6725,
+      "encap_avg": 20.8647,
+      "decap_avg": 20.5475,
+      "pk_size": 15632,
+      "sk_size": 31296,
+      "ct_size": 15744
+    },
+    {
+      "variant": "eFrodoKEM-1344-AES",
+      "status": "OK",
+      "keygen_avg": 11.1677,
+      "encap_avg": 14.9357,
+      "decap_avg": 14.2727,
+      "pk_size": 21520,
+      "sk_size": 43088,
+      "ct_size": 21632
+    },
+    {
+      "variant": "eFrodoKEM-1344-SHAKE",
+      "status": "OK",
+      "keygen_avg": 30.0448,
+      "encap_avg": 37.7951,
+      "decap_avg": 37.6129,
+      "pk_size": 21520,
+      "sk_size": 43088,
+      "ct_size": 21632
+    }
+  ],
+  "MAYO": [
+    {
+      "variant": "MAYO-1",
+      "status": "OK",
+      "keygen_avg": 2.6272,
+      "sign_avg": 5.4812,
+      "verify_avg": 1.5078,
+      "pk_size": 1420,
+      "sk_size": 24,
+      "sig_size": 454
+    },
+    {
+      "variant": "MAYO-2",
+      "status": "OK",
+      "keygen_avg": 2.6916,
+      "sign_avg": 4.1647,
+      "verify_avg": 0.9733,
+      "pk_size": 4912,
+      "sk_size": 24,
+      "sig_size": 186
+    },
+    {
+      "variant": "MAYO-3",
+      "status": "OK",
+      "keygen_avg": 6.2077,
+      "sign_avg": 16.3475,
+      "verify_avg": 3.9703,
+      "pk_size": 2986,
+      "sk_size": 32,
+      "sig_size": 681
+    },
+    {
+      "variant": "MAYO-5",
+      "status": "OK",
+      "keygen_avg": 14.8751,
+      "sign_avg": 39.5823,
+      "verify_avg": 12.3249,
+      "pk_size": 5554,
+      "sk_size": 40,
+      "sig_size": 964
+    }
+  ],
+  "CROSS": [
+    {
+      "variant": "cross-rsdp-128-balanced",
+      "status": "OK",
+      "keygen_avg": 0.507,
+      "sign_avg": 5.9304,
+      "verify_avg": 3.3553,
+      "pk_size": 77,
+      "sk_size": 32,
+      "sig_size": 13152
+    },
+    {
+      "variant": "cross-rsdp-128-fast",
+      "status": "OK",
+      "keygen_avg": 0.4525,
+      "sign_avg": 3.0718,
+      "verify_avg": 1.8795,
+      "pk_size": 77,
+      "sk_size": 32,
+      "sig_size": 18432
+    },
+    {
+      "variant": "cross-rsdp-128-small",
+      "status": "OK",
+      "keygen_avg": 0.4919,
+      "sign_avg": 10.5992,
+      "verify_avg": 5.6845,
+      "pk_size": 77,
+      "sk_size": 32,
+      "sig_size": 12432
+    },
+    {
+      "variant": "cross-rsdp-192-balanced",
+      "status": "OK",
+      "keygen_avg": 0.6525,
+      "sign_avg": 11.5146,
+      "verify_avg": 6.0087,
+      "pk_size": 115,
+      "sk_size": 48,
+      "sig_size": 29853
+    },
+    {
+      "variant": "cross-rsdp-256-balanced",
+      "status": "OK",
+      "keygen_avg": 0.7491,
+      "sign_avg": 25.6325,
+      "verify_avg": 10.6345,
+      "pk_size": 153,
+      "sk_size": 64,
+      "sig_size": 53527
+    },
+    {
+      "variant": "cross-rsdpg-128-balanced",
+      "status": "OK",
+      "keygen_avg": 0.5467,
+      "sign_avg": 5.302,
+      "verify_avg": 2.9428,
+      "pk_size": 54,
+      "sk_size": 32,
+      "sig_size": 9120
+    },
+    {
+      "variant": "cross-rsdpg-128-fast",
+      "status": "OK",
+      "keygen_avg": 0.3831,
+      "sign_avg": 2.7212,
+      "verify_avg": 1.7022,
+      "pk_size": 54,
+      "sk_size": 32,
+      "sig_size": 11980
+    },
+    {
+      "variant": "cross-rsdpg-128-small",
+      "status": "OK",
+      "keygen_avg": 0.5163,
+      "sign_avg": 10.3014,
+      "verify_avg": 5.4835,
+      "pk_size": 54,
+      "sk_size": 32,
+      "sig_size": 8960
+    }
+  ],
+  "OV": [
+    {
+      "variant": "OV-Is",
+      "status": "OK",
+      "keygen_avg": 71.7053,
+      "sign_avg": 1.6282,
+      "verify_avg": 1.5463,
+      "pk_size": 412160,
+      "sk_size": 348704,
+      "sig_size": 96
+    },
+    {
+      "variant": "OV-Ip",
+      "status": "OK",
+      "keygen_avg": 65.5871,
+      "sign_avg": 1.7973,
+      "verify_avg": 1.2835,
+      "pk_size": 278432,
+      "sk_size": 237896,
+      "sig_size": 128
+    },
+    {
+      "variant": "OV-III",
+      "status": "OK",
+      "keygen_avg": 417.8828,
+      "sign_avg": 5.6556,
+      "verify_avg": 4.1188,
+      "pk_size": 1225440,
+      "sk_size": 1044320,
+      "sig_size": 200
+    },
+    {
+      "variant": "OV-V",
+      "status": "OK",
+      "keygen_avg": 1201.9732,
+      "sign_avg": 11.973,
+      "verify_avg": 8.9607,
+      "pk_size": 2869440,
+      "sk_size": 2436704,
+      "sig_size": 260
+    }
+  ],
+  "SNOVA": [
+    {
+      "variant": "SNOVA_24_5_4",
+      "status": "OK",
+      "keygen_avg": 2.6095,
+      "sign_avg": 8.9599,
+      "verify_avg": 5.5067,
+      "pk_size": 1016,
+      "sk_size": 48,
+      "sig_size": 248
+    },
+    {
+      "variant": "SNOVA_37_17_2",
+      "status": "OK",
+      "keygen_avg": 8.8183,
+      "sign_avg": 9.6134,
+      "verify_avg": 3.5534,
+      "pk_size": 9842,
+      "sk_size": 48,
+      "sig_size": 124
+    },
+    {
+      "variant": "SNOVA_25_8_3",
+      "status": "OK",
+      "keygen_avg": 3.4305,
+      "sign_avg": 6.2557,
+      "verify_avg": 3.6917,
+      "pk_size": 2320,
+      "sk_size": 48,
+      "sig_size": 165
+    },
+    {
+      "variant": "SNOVA_56_25_2",
+      "status": "OK",
+      "keygen_avg": 44.6677,
+      "sign_avg": 41.4554,
+      "verify_avg": 11.9272,
+      "pk_size": 31266,
+      "sk_size": 48,
+      "sig_size": 178
+    }
+  ]
+}
