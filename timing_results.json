@@ -1,9 +1,0 @@
-{
-  "timestamp": "2026-07-05T14:49:10.920686",
-  "hit_mean_ns": 1526.143,
-  "hit_std_ns": 349.9272275073776,
-  "miss_mean_ns": 1259.239,
-  "miss_std_ns": 691.913374548433,
-  "cache_differential_ns": -266.904,
-  "snr": -0.2561850627373631,
-  "exploitable": 
